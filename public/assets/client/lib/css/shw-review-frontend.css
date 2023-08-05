@@ -1,0 +1,354 @@
+.average-rating-sum {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 25px 0;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 10px
+}
+
+.average-rating-sum .star-rating {
+    margin: 10px auto 0 !important
+}
+
+.average-rating-sum .avg-rating {
+    width: 20%;
+    text-align: center
+}
+
+.average-rating-sum .rating-histogram {
+    width: 70%
+}
+
+.average-rating-sum .avg-rating .avg-rating-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: .6em
+}
+
+.average-rating-sum .rating-histogram .rating-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center
+}
+
+span.star-rating {
+    font-size: 12px
+}
+
+span.count-rating {
+    font-size: 12px
+}
+
+.average-rating-sum .rating-histogram .star-rating {
+    flex-shrink: 0
+}
+
+.star-rating span {
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 1.5em
+}
+
+.average-rating-sum .rating-histogram .rating-percentage-bar {
+    flex-grow: 1;
+    height: .714em;
+    border-radius: .286em;
+    background-color: #f3f3f3
+}
+
+.average-rating-sum .rating-histogram .rating-percentage-bar {
+    margin: 10px 5px 0 10px
+}
+
+.average-rating-sum .rating-histogram .rating-count {
+    margin-top: 10px;
+    min-width: 150px
+}
+
+.average-rating-sum .rating-histogram .rating-percentage {
+    height: 100%;
+    background-color: #da2032;
+    display: block;
+    border-radius: .286em
+}
+
+.average-rating-sum .rating-histogram .rating-count.zero {
+    color: #b6b6b6
+}
+
+.average-rating-sum .custom-star-rating {
+    position: relative;
+    justify-content: flex-end;
+    width: auto
+}
+
+.average-rating-sum .custom-star-rating span {
+    width: 15px;
+    height: 15px;
+    background-size: 100%
+}
+
+a.btn-reviews-now {
+    background-color: #da2032;
+    color: #fdd836;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 20px
+}
+
+#review_form .shw-upload-local-images .shw-upload-images-status,
+.shw-upload-local-images .shw-upload-images-status {
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 3px 5px
+}
+
+#review_form .shw-upload-local-images #shw-review-image,
+.shw-upload-local-images #shw-review-image {
+    margin: 0 0 15px 0;
+    width: 100%
+}
+
+#review_form .shw-upload-local-images .shw-upload-images-status.shw-upload-images-status-error,
+.shw-upload-local-images .shw-upload-images-status.shw-upload-images-status-error {
+    background-color: #ff4136;
+    color: #303030
+}
+
+#review_form .shw-upload-images-preview,
+.shw-upload-images-preview {
+    display: flex;
+    margin: 0 0 0 0
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers,
+.shw-upload-images-preview .shw-upload-images-containers {
+    width: 75px;
+    height: 75px;
+    margin: 0 10px 10px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers.shw-upload-delete-pending,
+.shw-upload-images-preview .shw-upload-images-containers.shw-upload-delete-pending {
+    pointer-events: none
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-thumbnail,
+.shw-upload-images-preview .shw-upload-images-thumbnail {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 0 0 0;
+    opacity: .3
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers.shw-upload-ok.shw-upload-delete-pending .shw-upload-images-thumbnail,
+.shw-upload-images-preview .shw-upload-images-containers.shw-upload-ok.shw-upload-delete-pending .shw-upload-images-thumbnail {
+    opacity: .2
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-pbar,
+.shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-pbar {
+    width: 65px;
+    height: 10px;
+    margin: 0 5px 0 5px;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color: #ddd;
+    border-radius: 5px
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-pbar .shw-upload-images-pbarin,
+.shw-upload-images-preview .shw-upload-images-pbarin {
+    width: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #4bbe67;
+    border-radius: 5px
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers.shw-upload-ok .shw-upload-images-thumbnail,
+.shw-upload-images-preview .shw-upload-images-containers.shw-upload-ok .shw-upload-images-thumbnail {
+    opacity: 1
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers.shw-upload-ok .shw-upload-images-pbar,
+.shw-upload-images-preview .shw-upload-images-containers.shw-upload-ok .shw-upload-images-pbar {
+    display: none
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-delete,
+.shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-delete {
+    padding: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    display: none;
+    background-color: #e7412c;
+    border-radius: 10px;
+    border: 0 solid;
+    line-height: 0;
+    cursor: pointer
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-delete:hover,
+.shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-delete:hover {
+    background-color: #db2c1b
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers.shw-upload-ok .shw-upload-images-delete,
+.shw-upload-images-preview .shw-upload-images-containers.shw-upload-delete-pending .shw-upload-images-delete {
+    display: block
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers.shw-upload-ok.shw-upload-delete-pending .shw-upload-images-delete,
+.shw-upload-images-preview .shw-upload-images-containers.shw-upload-delete-pending .shw-upload-images-delete {
+    opacity: .2
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-delete svg,
+.shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-delete svg {
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    line-height: 18px;
+    display: block
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-delete .shw-no-icon,
+.shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-delete .shw-no-icon {
+    fill: #fff
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers.shw-upload-delete-pending .shw-upload-images-delete-spinner,
+.shw-upload-images-preview .shw-upload-images-containers.shw-upload-delete-pending .shw-upload-images-delete-spinner {
+    display: block
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-delete-spinner,
+.shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-delete-spinner:after {
+    -webkit-animation: select2_spin_pro 500ms infinite linear;
+    animation: select2_spin_pro 500ms infinite linear;
+    border: 2px solid #9e9e9e;
+    border-radius: 32px;
+    border-right-color: transparent !important;
+    border-top-color: transparent !important;
+    content: "";
+    display: block;
+    height: 16px;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px;
+    position: absolute;
+    width: 16px
+}
+
+#review_form .shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-delete-spinner,
+.shw-upload-images-preview .shw-upload-images-containers .shw-upload-images-delete-spinner {
+    position: relative;
+    opacity: .5;
+    pointer-events: none
+}
+
+p.shw-comment-image-text {
+    margin-bottom: .5em;
+    font-size: .9em
+}
+
+div.shw-comment-images {
+    margin-bottom: 1.5em
+}
+
+div.shw-comment-image {
+    width: 150px;
+    float: left;
+    margin-right: 5px;
+    display: flex;
+    height: 150px;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 12px
+}
+
+#reviews div.iv-comment-image img,
+div.iv-comment-image-top img,
+div.iv-comment-image img,
+div.iv-comment-image-top img {
+    box-shadow: none;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    padding: 0;
+    border-radius: 0
+}
+
+div.iv-comment-image-top img {
+    cursor: pointer
+}
+
+.comment-form-rating {
+    display: flex;
+    justify-content: space-between
+}
+
+.comment-form-rating .stars a[class*="star-"] {
+    border-left: unset !important;
+    margin-left: 0em !important;
+    font-size: 1.2rem
+}
+
+.comment-form-rating .stars a[class*="star-"]::after {
+    content: "î€…" !important
+}
+
+.comment-form-rating .stars a[class*="star-"].selected::after {
+    color: rgb(253, 216, 54) !important
+}
+
+.comment-form-rating .stars a[class*="star-"].hover::after {
+    color: rgb(253, 216, 54) !important
+}
+
+.star-rating span:before,
+.star-rating:before,
+.woocommerce-page .star-rating:before,
+.stars a:hover:after,
+.stars a.active:after {
+    color: rgb(253, 216, 54) !important
+}
+
+img.avatar.custom-avatar {
+    object-position: 50% 50%;
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+    height: 50px;
+    width: 50px
+}
